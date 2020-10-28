@@ -10,46 +10,12 @@
     display: table-cell;
 }
 
-.lh-copy {
-    line-height: 1.5;
-}
-
-.mw5 {
-    max-width: 16rem;
-}
-
-.mw6 {
-    max-width: 32rem;
-}
-
-.pl3 {
-    padding-left: 1rem;
-}
-
-.pv4 {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-}
-
-.mv0 {
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
-.center {
-    margin-right: auto;
-    margin-left: auto;
-}
-
 .v-top {
     vertical-align: top;
 }
 
 @media screen and (min-width: 30em) {
-    .pv6-ns {
-        padding-top: 8rem;
-        padding-bottom: 8rem;
-    }
+    
 }
 
 @media screen and (min-width: 30em) and (max-width: 60em) {
