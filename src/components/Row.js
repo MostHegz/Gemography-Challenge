@@ -3,12 +3,11 @@ import Avatar from'./Avatar';
 import Words from './Words';
 // import './Row.css';
 
-function RowList({data}){
-    const {owner} = data;
+function RowList({data,owner}){
     return(
-        <div className="dt pv2 pv2-m pv2-ns w-100 bg-light-blue br4 shadow-3">
+        <div className="dt pv2 pv2-m pv2-ns w-95 bg-light-blue br4 shadow-3 ma3">
             <Avatar owner={owner} />
-            <Words data={data}/>
+            <Words data={data} owner={owner}/>
         </div>
     )
 }

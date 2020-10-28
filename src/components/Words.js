@@ -2,8 +2,8 @@ import React from 'react';
 // import './Words.css';
 
 
-function Words({data}){
-    const {description, issuesNumber, repoName, repoURL, starsNumber,timeStamp,owner} = data;
+function Words({data,owner}){
+    const {description, issuesNumber, repoName, repoURL, starsNumber,timeStamp} = data;
 
     const dayInMilliseconds = 60*60*24*1000;
     const dateDifference = Math.floor((new Date() - new Date(timeStamp))/ dayInMilliseconds);
@@ -19,7 +19,10 @@ function Words({data}){
                 <p className='ba bw1 pa1 mv2-ns ma1 di f5 br2'>{`Issues: ${issuesNumber}`}</p>
             </div>
             <div className='dib'> 
-                <p className='pa1 f5-ns f7'>{`Submitted ${dateDifference} days ago by ${owner.login}`}</p>
+                <p className='pa1 f5-ns f7'>
+                    <span>{`Submitted ${dateDifference} days ago by `}</span>
+                    <a href={owner.html_url}>{owner.login}</a>               
+                </p>
             </div>
         </div>
     )
