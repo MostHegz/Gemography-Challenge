@@ -10,16 +10,16 @@ function Words({data}){
 
     return(
         <div className="dtc v-top pl3-ns pa1 w-80-ns w-70">
-            <h1 className="lh-copy mv0 v-top f2-ns f4">
+            <h1 className="lh-copy mv0 v-top f1-ns f4">
                 <a href={repoURL}>{repoName}</a>
             </h1>
             <h2 className='f4-ns f6 ma2-ns ma2'>{description}</h2>
-            <div className='dib'>
-                <p className='ba bw1 pa1 mv2 di f5'>{`Stars: ${starsNumber}`}</p>
-                <p className='ba bw1 pa1 ma1 di f5'>{`Issues: ${issuesNumber}`}</p>
+            <div className='dib mt2 mt3-ns'>
+                <p className='ba bw1 pa1 mv2-ns ma1 di f5 br2'>{`Stars: ${starsNumber}`}</p>
+                <p className='ba bw1 pa1 mv2-ns ma1 di f5 br2'>{`Issues: ${issuesNumber}`}</p>
             </div>
             <div className='dib'> 
-                <p className='pa1 f5-ns f7 mb0'>{`Submitted ${dateDifference} days ago by ${owner.login}`}</p>
+                <p className='pa1 f5-ns f7'>{`Submitted ${dateDifference} days ago by ${owner.login}`}</p>
             </div>
         </div>
     )
