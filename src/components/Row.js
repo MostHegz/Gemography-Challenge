@@ -1,7 +1,7 @@
 import React from 'react';
 import Avatar from'./Avatar';
 import Words from './Words';
-import './Row.css';
+// import './Row.css';
 
 function RowList({data}){
     const {owner} = data;

@@ -1,5 +1,5 @@
 import React from 'react';
-import './Avatar.css';
+// import './Avatar.css';
 
 function Avatar({owner}){
     const {avatar_url, login} = owner;

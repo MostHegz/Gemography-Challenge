@@ -1,5 +1,5 @@
 import React from 'react';
-import './Words.css';
+// import './Words.css';
 
 
 function Words({data}){
@@ -9,7 +9,7 @@ function Words({data}){
     const dateDifference = Math.floor((new Date() - new Date(timeStamp))/ dayInMilliseconds);
 
     return(
-        <div className="dtc v-top pl3-ns pa1 w-80-ns w-70">
+        <div className="dtc v-top pl3-ns pa1 w-80-ns w-70 w-90-l">
             <h1 className="lh-copy mv0 v-top f1-ns f4">
                 <a href={repoURL}>{repoName}</a>
             </h1>
