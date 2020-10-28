@@ -11,7 +11,7 @@ function Words({data,owner}){
     return(
         <div className="dtc v-top pl3-ns pa1 w-80-ns w-70 w-90-l">
             <h1 className="lh-copy mv0 v-top f1-ns f4">
-                <a href={repoURL}>{repoName}</a>
+                <a className='dark-gray' href={repoURL}>{repoName}</a>
             </h1>
             <h2 className='f4-ns f6 ma2-ns ma2'>{description}</h2>
             <div className='dib mt2 mt3-ns'>
