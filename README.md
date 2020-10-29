@@ -1,4 +1,20 @@
-# Getting Most Popular Github Repos in the Last Month
+# Getting Most Popular Github Repos in the Last Month (v-0.1)
+
+## App Summary 
+This app uses the Github API to get most popular Github Repositories that were created in the last 30 days. 
+
+## Features
+* Showing most popular Github repositories that were created in the last 30 days
+* Showing one repository per row which contains:
+    * Repository Name 
+    * Repository Description
+    * Number of stars
+    * Username and avatar of the owner
+* Infinite scrolling and loading new repositories when reaching the end of the page
+* The application is reposnsive and can work on different screen sizes (Screenshots are shown below)
+
+## 
+
 
 
 

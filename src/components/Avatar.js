@@ -8,7 +8,7 @@ function Avatar({owner}){
             <img 
             alt={login}
             src={avatar_url} 
-            className = "br4 h4-ns h-100 avatar"
+            className = "br4 h-100 avatar"
             />
         </div>
     )
