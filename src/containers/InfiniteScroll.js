@@ -25,7 +25,7 @@ const InfiniteScroll = () => {
             return (
                 <div key={item.id}>
                     <Row data={item} owner={item.owner} />
-                    <h1 className='f2 blue' ref={lastRepoElementRef}>Loading More...</h1>
+                    <h1 className='f2 gray tc' ref={lastRepoElementRef}>Loading More...</h1>
                     <h2> {error && 'ERROR!!'} </h2>
                 </div>
             )
