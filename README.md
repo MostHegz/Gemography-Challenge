@@ -19,13 +19,13 @@ This app uses the Github API to get most popular Github Repositories that were c
 
 ### Screeshots
 Large Screen
-[!alt text](https://github.com/MostHegz/Gemography-Challenge/blob/main/Large-sized-screen.PNG)
+![alt text](https://github.com/MostHegz/Gemography-Challenge/blob/main/Large-sized-screen.PNG)
 
 Medium Screen
-[!alt text](https://github.com/MostHegz/Gemography-Challenge/blob/main/Medium-sized-screen.PNG)
+![alt text](https://github.com/MostHegz/Gemography-Challenge/blob/main/Medium-sized-screen.PNG)
 
 Small Screen
-[!alt text](https://github.com/MostHegz/Gemography-Challenge/blob/main/Small-sized-screen.PNG)
+![alt text](https://github.com/MostHegz/Gemography-Challenge/blob/main/Small-sized-screen.PNG)
 
 ## Bugs and Issues
 * Unnescessary scaling of the Avatar size when changing screen size
