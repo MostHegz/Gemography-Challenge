@@ -17,6 +17,13 @@ This web app was made as a coding challenge for Gemography. It uses the Github A
 * Infinite scrolling and loading new repositories when reaching the end of the page
 * The application is reposnsive and can work on different screen sizes 
 
+## Getting Started
+1. Download files found on the main branch of the repository
+2. Install node.js and npm
+3. In the terminal go to the repository folder
+4. type npm start
+
+
 ### Screeshots
 Large Screen
 
