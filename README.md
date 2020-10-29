@@ -1,7 +1,7 @@
 # Getting Most Popular Github Repos in the Last Month (v-0.1)
 
 ## App Summary 
-This app uses the Github API to get most popular Github Repositories that were created in the last 30 days. 
+This web app was made as a coding challenge for Gemography. It uses the Github API to get most popular Github Repositories that were created in the last 30 days. 
 
 ## Features
 * Showing most popular Github repositories that were created in the last 30 days
