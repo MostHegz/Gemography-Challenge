@@ -13,7 +13,6 @@ const InfiniteScroll = () => {
         if (loading) return
         if (observer.current) observer.current.disconnect();
         observer.current = new IntersectionObserver(entries => {
-            console.log(reachedFinalPage)
             if (entries[0].isIntersecting &&!reachedFinalPage) {
                 setPage(oldPage => oldPage + 1)
             }
@@ -22,28 +21,17 @@ const InfiniteScroll = () => {
     }, [loading,reachedFinalPage])
 
     const rows = useCallback( metaData.map((item,index) => {
-        
-        const data = {
-            repoName: item.name,
-            description: item.description,
-            starsNumber: item.stargazers_count,
-            issuesNumber: item.open_issues_count,
-            timeStamp: item.created_at,
-            repoURL:item.html_url,
-            id: item.id
-        }
-        const {owner} = item;
-
         if (metaData.length === index+1) {
             return (
-                <div>
-                    <Row key={data.id} data={data} owner={owner} />
-                    <h1 ref={lastRepoElementRef}>Loading More...</h1>
+                <div key={item.id}>
+                    <Row data={item} owner={item.owner} />
+                    <h1  ref={lastRepoElementRef}>Loading More...</h1>
                     <h2> {error && 'ERROR!!'} </h2>
                 </div>
             )
         }
-        return <Row key={data.id} data={data} owner={owner} />
+        return <Row key={item.id} data={item} owner={item.owner} />
+
     }),[page,metaData])
     // const rows = useCallback(() => {
     //     const rowList = metaData.map((item, index) =>{
