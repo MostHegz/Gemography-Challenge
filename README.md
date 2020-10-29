@@ -20,15 +20,15 @@ This web app was made as a coding challenge for Gemography. It uses the Github A
 ### Screeshots
 Large Screen
 
-![alt text](https://github.com/MostHegz/Gemography-Challenge/blob/main/Large-sized-screen.PNG)
+![Large](https://github.com/MostHegz/Gemography-Challenge/blob/main/Large-sized-screen.PNG)
 
 Medium Screen
 
-![alt text](https://github.com/MostHegz/Gemography-Challenge/blob/main/Medium-sized-screen.PNG)
+![Medium](https://github.com/MostHegz/Gemography-Challenge/blob/main/Medium-sized-screen.PNG)
 
 Small Screen
 
-![alt text](https://github.com/MostHegz/Gemography-Challenge/blob/main/Small-sized-screen.PNG)
+![Small](https://github.com/MostHegz/Gemography-Challenge/blob/main/Small-sized-screen.PNG)
 
 ## Bugs and Issues
 * Unnescessary scaling of the Avatar size when changing screen size
