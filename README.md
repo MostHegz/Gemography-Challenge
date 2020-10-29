@@ -8,13 +8,16 @@ This app uses the Github API to get most popular Github Repositories that were c
 * Showing one repository per row which contains:
     * Repository Name 
     * Repository Description
-    * Number of stars
+    * Number of stars 
+    * Number of open issues
     * Username and avatar of the owner
+    * Link to the repository 
+    * Link to the owner's github profile
+    * Repository creation day
 * Infinite scrolling and loading new repositories when reaching the end of the page
-* The application is reposnsive and can work on different screen sizes (Screenshots are shown below)
+* The application is reposnsive and can work on different screen sizes 
 
-## 
-
+### Screeshots
 
 
 
