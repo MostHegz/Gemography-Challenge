@@ -13,10 +13,11 @@ function RowList({metaData}){
             starsNumber: item.stargazers_count,
             issuesNumber: item.open_issues_count,
             timeStamp: item.created_at,
-            repoURL:item.html_url
+            repoURL:item.html_url,
+            id: item.id
         }
         const {owner} = item;
-        return <Row data={data} owner={owner} />
+        return <Row key={data.id} data={data} owner={owner} />
     })
     
     return rows;

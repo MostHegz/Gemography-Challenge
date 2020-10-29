@@ -31,7 +31,6 @@ function App() {
         <RowList metaData={metaData}/>
       </header>
     </div>
-  );
+  )
 }
-
 export default App;
