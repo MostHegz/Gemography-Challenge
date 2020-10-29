@@ -20,7 +20,7 @@ const InfiniteScroll = () => {
         if (element) observer.current.observe(element)
     }, [loading,reachedFinalPage])
 
-    const rows = useCallback( metaData.map((item,index) => {
+    const rows = metaData.map((item,index) => {
         if (metaData.length === index+1) {
             return (
                 <div key={item.id}>
@@ -32,24 +32,8 @@ const InfiniteScroll = () => {
         }
         return <Row key={item.id} data={item} owner={item.owner} />
 
-    }),[page,metaData])
-    // const rows = useCallback(() => {
-    //     const rowList = metaData.map((item, index) =>{
-    //         if (error) {
-    //             return <h1> ERROOOORRR !!!</h1>
-    //         }
-    //         if (metaData.length === index+1) {
-    //             return (
-    //                 <div>
-    //                     <Row key={item.id} data={item} owner={item.owner} />
-    //                     <h1 ref={lastRepoElementRef}>Loading More...</h1>
-    //                 </div>
-    //             )
-    //         }
-    //         return <Row key={item.id} data={item} owner={item.owner} />
-    //     })
-    //     return rowList;
-    // },[page,metaData])
+    })
+
 
     return (
         <div className="container">
