@@ -39,6 +39,7 @@ Small Screen
 
 ## Bugs and Issues
 * Unnescessary scaling of the Avatar size when changing screen size
+* If the repository name is a single word and very large this row might not be responsive
 
 ## Libraries Used
 * ReactJS
