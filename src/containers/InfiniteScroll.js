@@ -28,6 +28,7 @@ const InfiniteScroll = () => {
         //each item is passed to each child as props
         if (metaData.length === index + 1) {
             //checking if it's the last row in page to attach observer to it
+            //using repo id as key for each iteration
             return (
                 <div key={item.id}>
                     <Row repoData={item} owner={item.owner} />
