@@ -6,9 +6,9 @@ export default function useLoadMore(page) {
     const [metaData, setMetaData] = useState([]); 
     const [reachedFinalPage, setReachedFinalPage] = useState(false)
 
-    useEffect(() => {
+    useEffect(() => { 
+        // here we fetching new repos then adding to List
         setLoading(true);
-        // here we simulate adding new posts to List
         const date = getDateFromThirtyDays();
         fetch(`https://api.github.com/search/repositories?q=created:%3E${date}&sort=stars&order=desc&page=${page}`)
             .then(response => {
@@ -26,7 +26,7 @@ export default function useLoadMore(page) {
                 return [...oldDataItems, ...data.items]
             }))
             .then(() =>{
-                if (page > 33) {
+                if (page > 33) { //if reached the maximum limil of pages allowed by github api
                     setReachedFinalPage(true);
                 }
             })
@@ -35,14 +35,13 @@ export default function useLoadMore(page) {
     },[page])
 
     const getDateFromThirtyDays = ()=>{
-        const today = new Date();
-        today.setDate(today.getDate()-30);
-        const dd = String(today.getDate()).padStart(2, '0');
-        const mm = String(today.getMonth()+1).padStart(2, '0'); 
-        const yyyy = today.getFullYear();
-        const thirtyDaysAgo = yyyy+'-'+mm+'-'+dd;
+        const todayMinusThirty = new Date();//It starts as today
+        todayMinusThirty.setDate(todayMinusThirty.getDate()-30);//But we remove 30 days here
+        const dd = String(todayMinusThirty.getDate()).padStart(2, '0');
+        const mm = String(todayMinusThirty.getMonth()+1).padStart(2, '0'); 
+        const yyyy = todayMinusThirty.getFullYear();
+        const thirtyDaysAgo = yyyy+'-'+mm+'-'+dd;//putting the date in the correct query format 
         return thirtyDaysAgo;
     }
-
     return {loading, error, metaData, reachedFinalPage}
 }

@@ -1,9 +1,8 @@
 import React from 'react';
-// import './Words.css';
 
 
-function Words({data,owner}){
-    const {description, open_issues_count, name, html_url, stargazers_count,created_at} = data;
+function RepoDetails({repoData,owner}){
+    const {description, open_issues_count, name, html_url, stargazers_count,created_at} = repoData;
 
     const dayInMilliseconds = 60*60*24*1000;
     const dateDifference = Math.floor((new Date() - new Date(created_at))/ dayInMilliseconds);
@@ -28,4 +27,4 @@ function Words({data,owner}){
     )
 }
 
-export default Words;
+export default RepoDetails;
