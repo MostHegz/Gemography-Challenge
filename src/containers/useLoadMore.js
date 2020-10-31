@@ -17,9 +17,6 @@ export default function useLoadMore(page) {
                 }
                 if (response.status === 403) {
                     setError(true)
-                    // return {
-                    //     items: 'Reach API request limits' 
-                    // }
                 }
             })
             .then((data) => setMetaData(oldDataItems => {
