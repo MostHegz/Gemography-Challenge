@@ -25,15 +25,17 @@ const InfiniteScroll = () => {
     //the final rendered array 
     //P.S. it's not a component on its own as we need to pass the observer reference in this context. Unless we use forwardRef which might have caused a breaking change(https://reactjs.org/docs/forwarding-refs.html#note-for-component-library-maintainers)
     const rowList = metaData.map((item, index) => {
-        //each item is passed to each child as props
         if (metaData.length === index + 1) {
             //checking if it's the last row in page to attach observer to it
+            if (error) {
+                return <h1> ERROR</h1>
+            } // checking if there is an error to prevent the load more component from rendering
+
             //using repo id as key for each iteration
             return (
                 <div key={item.id}>
                     <Row repoData={item} owner={item.owner} />
                     <h1 className='f2 gray tc' ref={lastRepoElementRef}>Loading More...</h1>
-                    <h2> {error && 'ERROR!!'} </h2>
                 </div>
             )
         }

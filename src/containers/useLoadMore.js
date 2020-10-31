@@ -16,10 +16,10 @@ export default function useLoadMore(page) {
                     return response.json()
                 }
                 if (response.status === 403) {
-                    setReachedFinalPage(true);
-                    return {
-                        items: 'Reach API request limits' 
-                    }
+                    setError(true)
+                    // return {
+                    //     items: 'Reach API request limits' 
+                    // }
                 }
             })
             .then((data) => setMetaData(oldDataItems => {
