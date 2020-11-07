@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Gemography-Challenge/static/css/main.6dea0f05.chunk.css",
-    "main.js": "/Gemography-Challenge/static/js/main.08ea80f9.chunk.js",
-    "main.js.map": "/Gemography-Challenge/static/js/main.08ea80f9.chunk.js.map",
+    "main.js": "/Gemography-Challenge/static/js/main.443dad15.chunk.js",
+    "main.js.map": "/Gemography-Challenge/static/js/main.443dad15.chunk.js.map",
     "runtime-main.js": "/Gemography-Challenge/static/js/runtime-main.e4f43aa9.js",
     "runtime-main.js.map": "/Gemography-Challenge/static/js/runtime-main.e4f43aa9.js.map",
     "static/css/2.31461e4f.chunk.css": "/Gemography-Challenge/static/css/2.31461e4f.chunk.css",
@@ -18,6 +18,6 @@
     "static/css/2.31461e4f.chunk.css",
     "static/js/2.fc6276ac.chunk.js",
     "static/css/main.6dea0f05.chunk.css",
-    "static/js/main.08ea80f9.chunk.js"
+    "static/js/main.443dad15.chunk.js"
   ]
 }
